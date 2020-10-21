@@ -1,0 +1,13 @@
+KERNEL EXPLOITATION:--
+---------------------------
+-->uname -a  ---to get the kernel version
+-->linpeas tool
+-->linuxexploit suggester
+-->kernel exploits website in refernces
+
+Dirtycow exploit :--
+-----------------------
+-->cow.c
+-->gcc -pthread cow.c -o cow
+-->./cow
+-->after running the command wait for shell and when we get the shell back run the passwd command to elevate to root
