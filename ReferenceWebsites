@@ -1,3 +1,11 @@
 Kernel Exploits:--
 -----------------------------
 https://github.com/lucyoa/kernel-exploits
+
+
+AUTOMATED_TOOLS:---
+--------------------------------------
+1)https://github.com/sleventyeleven/linuxprivchecker
+2)https://github.com/mzet-/linux-exploit-suggester
+3)https://github.com/rebootuser/LinEnum
+4)https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
