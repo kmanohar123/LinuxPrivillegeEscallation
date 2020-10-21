@@ -1,0 +1,8 @@
+MEMCACHED RECON:--
+------------------------------
+-->nmap -sV -script banner ipaddress -p-
+-->telnet ipaddress port   --------->connect to telnet and check for version
+-->nmap -script memcached-info -p 45654 192.147.85.2   ---->to check memcached server information
+-->memcstat --servers=ipaddress
+-->exploit by using metasploit(/auxilliary/gather/memcached_extractor)
+-->memcdump --servers=ipaddress
