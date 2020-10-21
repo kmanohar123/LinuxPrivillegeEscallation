@@ -1,0 +1,43 @@
+ENUMERATION:--
+--------------------------------------
+1)SYSTEM ENUMERATION:
+---------------------
+-->hostname
+-->uname -a   ------we will get the kernel version and architecture
+-->cat /proc/version
+-->cat /etc/issue
+-->lscpu     ----to know the cpu type
+-->ps aux   -----to check what services are running on the system
+-->ps aux | grep root
+
+
+2)USER ENUMERATION:
+-------------------
+-->whoami
+-->id
+-->sudo -l   -----to check what commands we can run as root without password
+-->cat /etc/passwd
+-->cat /etc/shadow
+-->cat /etc/group
+-->history
+-->sudo su -
+
+
+3)NETWORK ENUMEARTION:
+----------------------
+-->ifconfig/ip a
+-->route/ip route
+-->arp -a/ip neigh
+-->netstat -ano     -----to check what ports are open and which devices are connected 
+
+
+4)PASSWORD HUNTING:
+--------------------
+-->grep --color=auto -rnw '/' -ie "PASSWD" --color=always 2>/dev/null    --------- it is going to check all the files for any "PASSWD" if it identifies gives the output in red color
+-->grep --color=auto -rnw '/' -ie "PASSWD=" --color=always 2>/dev/null
+-->locate password | more
+-->locate pass | more
+-->find / -name authorized_keys 2>/dev/null
+-->find / -name id_rsa 2>/dev/null
+
+-->
