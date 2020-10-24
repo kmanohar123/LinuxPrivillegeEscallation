@@ -1,0 +1,41 @@
+https://book.hacktricks.xyz/linux-unix/privilege-escalation   
+
+1)SUDO SHELL ESCAPING:--
+----------------------------
+-->sudo -l
+-->gtfobins
+
+2)ESCALLATION VIA INTENDED FUNCTIONALITY:--
+----------------------------------------------
+-->apache sudo privillege escallation
+-->https://book.hacktricks.xyz/linux-unix/privilege-escalation
+-->sunday walkthrough hackthebox
+
+3)ESCALATION VIA LD_PRELOAD:--
+--------------------------------
+
+--->https://crackstation.net/
+
+4)CVE 2019-14287:--
+-----------------------
+
+-->https://www.exploit-db.com/exploits/47502
+
+User tryhackme may run the following commands on sudo-privesc:
+    (ALL, !root) NOPASSWD: /bin/bash
+
+if you see anything like this after running sudo -l command this means user cannot run /bin/bash as root 
+
+For those who might be unfamiliar with it: sudo is a command in unix that allows you to execute programs as other users. This usually defaults to the superuser (root),
+but it's also possible to execute programs as other users by specifying their username or UID. For example, sudo would usually be used like so: sudo <command>, 
+but you could manually choose to execute it as another user like this: sudo -u#<id> <command>. 
+This means that you would be pretending to be another user when you executed the chosen command, which can give you higher permissions than you might otherwise have had.
+
+
+5)sudo-cve-2019-18634:----
+----------------------------------
+SUDO BUFFEROVERFLOW
+
+
+
+
