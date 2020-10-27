@@ -35,6 +35,11 @@ This means that you would be pretending to be another user when you executed the
 5)sudo-cve-2019-18634:----
 ----------------------------------
 SUDO BUFFEROVERFLOW
+https://github.com/saleemrashid/sudo-cve-2019-18634
+
+actually when we are typing password in linux we will not see anything .but if we are seeing **** that means this is vulnerable to this sudo bufferoverflow 
+
+https://tryhackme.com/room/sudovulnsbof-------------practice
 
 
 
